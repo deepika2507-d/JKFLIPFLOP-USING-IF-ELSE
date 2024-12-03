@@ -37,12 +37,30 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 /* write all the steps invloved */
 
 **PROGRAM**
+ module exp7(J,K,clk,q,qbar);
+ input J,K,clk;
+ output reg q;
+ output reg qbar;
+ initial q=0;
+ initial qbar=1;
+ always @(posedge clk)
+ begin 
+q=((J&(~q))|((~K)&q));
+ qbar=~q;
+ end 
+endmodule 
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+Developed by:Deepika.V
+RegisterNumber:24000724
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
+![Screenshot (81)](https://github.com/user-attachments/assets/a5c67d85-0559-473c-83d7-d52a4f6a41ce)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![Screenshot (82)](https://github.com/user-attachments/assets/40885469-d33c-48aa-a00b-22527bb85e2a)
+
 
 **RESULTS**
+ JK flipflop using verilog is implemented and its functionality is verified
