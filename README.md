@@ -63,4 +63,6 @@ RegisterNumber:24000724
 
 
 **RESULTS**
+ 
+ 
  JK flipflop using verilog is implemented and its functionality is verified
