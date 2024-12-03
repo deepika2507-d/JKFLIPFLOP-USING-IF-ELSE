@@ -37,6 +37,9 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 /* write all the steps invloved */
 
 **PROGRAM**
+
+ 
+ 
  module exp7(J,K,clk,q,qbar);
  input J,K,clk;
  output reg q;
