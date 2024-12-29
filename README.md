@@ -67,9 +67,37 @@ endmodule
 Developed by:Deepika.V
 RegisterNumber:24000724
 */
+module jkff(j,k,clk,q,qbar);
+
+input j,k,clk;
+
+output reg q,qbar;
+
+initial 
+
+begin
+
+q=1'b0;
+
+q=1'b1;
+
+end 
+
+always @(posedge clk)
+
+begin 
+
+q<=(j&~q)|(~k&q);
+
+qbar<=~q;
+
+end
+
+endmodule
 
 **RTL LOGIC FOR FLIPFLOPS**
-![Screenshot (81)](https://github.com/user-attachments/assets/a5c67d85-0559-473c-83d7-d52a4f6a41ce)
+![image](https://github.com/user-attachments/assets/ab349fac-130a-4c62-88ce-4648a7b57a82)
+
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 ![Screenshot (212)](https://github.com/user-attachments/assets/c4345690-8222-49b8-b974-6749352be7b2)
